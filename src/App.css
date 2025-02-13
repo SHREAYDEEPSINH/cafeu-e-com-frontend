@@ -1,0 +1,150 @@
+
+#root{
+  font-family:Roboto, sans-serif;
+  
+}
+@font-face {
+  font-family: Lobster Two ;
+  src: url(./Assets/Lobster_Two/LobsterTwo-Regular.ttf);
+}
+.font2{
+  font-family: Lobster Two , cursive;
+  
+  
+}
+.redcolor-bg{
+  background-color: #CC3333;
+}
+.redcolor{
+  color: #CC3333;
+}
+.graycolor{
+  color: #666666;
+}
+
+
+/* navbar  */
+
+.dropdown-menu{
+  width: 20px !important;
+}
+
+/* home section  */
+.nav-home-back-img{
+  background-image: url(https://cafeu-react.netlify.app/img/slider/banner-bg.jpg);
+  background-size: cover;
+}
+.homemain{
+  height: auto;
+}
+.homefistcard>h5{
+  color:  #c33;
+  font-size: 20px;
+  font-weight: 600;
+}
+.homefistcard>h1{
+  font-size: 50px;
+}
+.homefistcard>span>button{
+  width: 120px;
+  height: 45px;
+  background-color: #cc3333;
+}
+.homefistcard>span :nth-child(2){
+  width: 45px;
+}
+
+@media screen and (max-width: 992px) {
+  .homefistcard>h1{
+    font-size: 46px;
+  }
+}
+@media screen and (max-width: 776px) {
+  .homefistcard>h1{
+    font-size: 36px;
+  }
+}
+
+
+.rotatdiv{
+  transform: rotate(90deg);
+  position: absolute;
+  top: 50%;
+  right: -120px;
+}
+.rotatdiv>a{
+ text-decoration: none;
+ color: #666666;
+}
+
+
+/* Quality cards section  */
+
+.qulity-back-img{
+  background-image: url(https://cafeu-react.netlify.app/img/icon/f-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.discover::after , .discover::before{
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #666666;
+  display: inline-flex;
+  margin: 10px;
+  transform: rotate(45deg);
+}
+.back-circle{
+  width: 30%;
+  background-color: #fff9f4; 
+  border-radius: 50%;
+}
+
+
+/* Special Offers section  */
+
+.SpecialOffers-back-img{
+  background-image: url(./Assets/Spacial-back-img.png);
+  background-color: rgba(0, 0, 0, 0.509);
+  background-blend-mode: color;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* menu section  */
+
+.menu-back-img{
+  height: auto;
+  background-image: url(./Assets/Menu-back-img.jpg);
+  /* background-repeat: no-repeat; */
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+ background-color: transparent !important;
+ color: #CC3333 !important;
+ border-bottom: 2px solid #CC3333 ;
+ border-radius: 0;
+}
+
+.order-back-img{
+  background-image: url(./Assets/order-back-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* cart section  */
+
+.product-cart-card{
+  width: 49%;
+  height: 200px;
+}
+
+
+@media screen  and (width < 992px) {
+  .product-cart-card{
+    width: 100%;
+    height: 150px !important;
+  }
+}
