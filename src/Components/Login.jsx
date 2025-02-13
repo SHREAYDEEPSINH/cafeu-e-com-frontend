@@ -22,7 +22,7 @@ function Login() {
         }
 
         axios
-            .post("http://localhost:9020/user/login", login)
+            .post("https://cafue-e-com-backend.vercel.app/user/login", login)
             .then((res) => {
                 localStorage.setItem("loginuser", JSON.stringify(res.data));
                 setError("");

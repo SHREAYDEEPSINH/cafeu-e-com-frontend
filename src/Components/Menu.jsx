@@ -12,7 +12,7 @@ function Menu() {
 
     useEffect(() => {
         axios
-            .get("http://localhost:9020/product/getAllProducts")
+            .get("https://cafue-e-com-backend.vercel.app/product/getAllProducts")
             .then((res) => {
                 setAllProducts(res.data.productData)
             })

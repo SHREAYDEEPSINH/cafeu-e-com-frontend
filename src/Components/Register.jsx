@@ -23,7 +23,7 @@ function Register() {
         }
 
         axios
-            .post("https://e-com-cafeu.vercel.app/user/register", register)
+            .post("https://cafue-e-com-backend.vercel.app/user/register", register)
             .then((res) => {
                 setSuccess("Registration successful!");
                 setError("");
