@@ -7,7 +7,7 @@ function Aboutus() {
 
                 <div className="row g-0 align-items-center">
                     <div className="col-md-6">
-                        <img height={"90%"} src="src/Assets/aboutusimg.png" className="img-fluid object-cover" alt="..." />
+                        <img height={"90%"} src="/aboutusimg.png" className="img-fluid object-cover" alt="..." />
                     </div>
                     <div className="col-md-6 ps-md-5">
                         <div className="card-body">
@@ -18,7 +18,7 @@ function Aboutus() {
                             <div className="card mb-3 border-0" style={{ width: "100%" }}>
                                 <div className="d-flex">
                                     <div className="d-flex align-items-center">
-                                        <img src="src/Assets/Buffet.png" className="img-fluid bg-warning bg-opacity-10 p-2" alt="..." />
+                                        <img src="/Buffet.png" className="img-fluid bg-warning bg-opacity-10 p-2" alt="..." />
                                     </div>
                                     <div className="">
                                         <div className="card-body">
@@ -33,7 +33,7 @@ function Aboutus() {
                             <div className="card mb-3 border-0" style={{ width: "100%" }}>
                                 <div className="d-flex">
                                     <div className="d-flex align-items-center">
-                                        <img src="src/Assets/Booking.png" className="img-fluid bg-warning bg-opacity-10 p-2" alt="..." />
+                                        <img src="/Booking.png" className="img-fluid bg-warning bg-opacity-10 p-2" alt="..." />
                                     </div>
                                     <div className="">
                                         <div className="card-body">

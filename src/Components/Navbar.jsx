@@ -16,7 +16,7 @@ function Navbar() {
         <div >
             <nav className="navbar navbar-expand">
                 <div className="container d-flex align-items-end">
-                    <Link className="navbar-brand" to="/"><img src="src/Assets/logo.png" alt="" /></Link>
+                    <Link className="navbar-brand" to="/"><img src="/logo.png" alt="" /></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -32,7 +32,7 @@ function Navbar() {
                                 <i className="bi bi-search"></i>
                             </li>
                             <li className='d-md-flex d-none  gap-3 align-items-center'>
-                                <img src="src/Assets/callicon.png" alt="" />
+                                <img src="/callicon.png" alt="" />
                                 <h6 className='m-0'> +880 123 456 789</h6>
                             </li>
                             <Link to="/cart" className=' text-danger'><i className="fa-solid fa-cart-shopping fs-4"></i></Link>
