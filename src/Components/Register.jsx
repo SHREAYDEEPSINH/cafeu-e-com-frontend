@@ -23,7 +23,7 @@ function Register() {
         }
 
         axios
-            .post("https://cafue-e-com-backend.vercel.app/user/register", register , { timeout: 10000 })
+            .post("https://cafue-e-com-backend.vercel.app/user/register", register , { timeout: 20000 })
             .then((res) => {
                 setSuccess("Registration successful!");
                 setError("");
