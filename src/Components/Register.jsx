@@ -34,7 +34,6 @@ function Register() {
             .catch((err) => {
                 setError(err.response?.data?.message || "Registration failed!");
                 setSuccess("");
-                console.log(err)
             });
     }
 
