@@ -14,29 +14,29 @@ function Register() {
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
 
-    function submitHandler(e) {
+    const submitHandler = async (e) => {
         e.preventDefault();
-
+    
         if (!register.username || !register.email || !register.password) {
             setError("All fields are required!");
             return;
         }
-
-        axios
-            .post("https://cafue-e-com-backend.vercel.app/user/register", register , { timeout: 20000 })
-            .then((res) => {
-                setSuccess("Registration successful!");
-                setError("");
-                setTimeout(() => {
-                    navigate("/login"); // Redirect to login page after success
-                }, 1500);
-            })
-            .catch((err) => {
-                setError(err.response?.data?.message || "Registration failed!");
-                setSuccess("");
-                console.log(err)
-            });
-    }
+    
+        try {
+            const res = await axios.post("https://cafue-e-com-backend.vercel.app/user/register", register);
+            setSuccess("Registration successful!");
+            setError("");
+    
+            setTimeout(() => {
+                navigate("/login"); // Redirect to login page after success
+            }, 1500);
+        } catch (err) {
+            setError(err.response?.data?.message || "Registration failed!");
+            setSuccess("");
+            console.log(err);
+        }
+    };
+    
 
     return (
         <div className="container mt-5">
