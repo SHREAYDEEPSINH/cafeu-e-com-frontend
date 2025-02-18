@@ -23,7 +23,7 @@ function Register() {
         }
     
         try {
-            const res = await axios.post("https://cafue-e-com-backend.vercel.app/user/register", register);
+            const res = await axios.post("https://cafue-e-com-backend.onrender.com/user/register", register);
             setSuccess("Registration successful!");
             setError("");
     
