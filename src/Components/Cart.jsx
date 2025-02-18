@@ -17,7 +17,7 @@ function Cart() {
       return;
     }
     axios
-      .get("https://cafue-e-com-backend.vercel.app/cart", {
+      .get("https://cafue-e-com-backend.onrender.com/cart", {
         headers: {
           Authorization: `Bearer ${lsData.token}`,
         },
@@ -41,7 +41,7 @@ function Cart() {
     };
 
     axios
-      .delete(`https://cafue-e-com-backend.vercel.app/cart/deletecart/${id}`, config)
+      .delete(`https://cafue-e-com-backend.onrender.com/cart/deletecart/${id}`, config)
       .then((res) => {
         setCartProducts(cartProducts.filter((cart) => cart._id !== id));
         alert("Cart deleted successfully!");

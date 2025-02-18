@@ -12,7 +12,7 @@ function Menu() {
 
     useEffect(() => {
         axios
-            .get("https://cafue-e-com-backend.vercel.app/product/getAllProducts")
+            .get("https://cafue-e-com-backend.onrender.com/product/getAllProducts")
             .then((res) => {
                 setAllProducts(res.data.productData)
             })
@@ -42,7 +42,7 @@ function Menu() {
 
         try {
             const response = await axios.post(
-                "http://localhost:9020/cart/addcart",
+                "https://cafue-e-com-backend.onrender.com/cart/addcart",
                 {
                     productId: product._id,
                     productName: product.productname,

@@ -22,7 +22,7 @@ function Login() {
         }
 
         axios
-            .post("https://cafue-e-com-backend.vercel.app/user/login", login)
+            .post("https://cafue-e-com-backend.onrender.com/user/login", login)
             .then((res) => {
                 localStorage.setItem("loginuser", JSON.stringify(res.data));
                 setError("");
