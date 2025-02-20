@@ -17,7 +17,7 @@ function AddProduct() {
 
     useEffect(() => {
         axios
-            .get("http://localhost:9020/product/getAllProducts")
+            .get("https://cafue-e-com-backend.onrender.com/product/getAllProducts")
             .then((res) => {
                 setAllProducts(res.data.productData)
             })
@@ -37,7 +37,7 @@ function AddProduct() {
         }
 
         axios
-            .post("http://localhost:9020/product/insertProductData", addProduct)
+            .post("https://cafue-e-com-backend.onrender.com/product/insertProductData", addProduct)
             .then((res) => {
                 setAllProducts([...allProducts, res.data]);
                 navigate("/admin");
