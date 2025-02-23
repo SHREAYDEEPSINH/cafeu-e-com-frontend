@@ -101,7 +101,7 @@ function Menu() {
                         <div className='d-flex justify-content-center flex-wrap  gap-5'>
                             {allProducts.map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
-                                    <img src={ele.image} className="card-img-top rounded-0" alt="..." />
+                                    <img src={ele.image} className="card-img-top rounded-0" alt={ele.productName} />
                                     <div className="card-body p-4">
                                         <h5 className="card-title fs-6 fw-bold mb-3">{ele.productname}</h5>
                                         <p className="card-text graycolor">{ele.productdetails}</p>

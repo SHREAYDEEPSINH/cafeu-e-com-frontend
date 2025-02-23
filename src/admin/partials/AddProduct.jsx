@@ -58,9 +58,9 @@ function AddProduct() {
                         <div class="mb-3">
                             <label class="form-label">Product Image:</label>
                             <input
-                                type="file"
+                                type="text"
                                 class="form-control"
-                                placeholder="Enter Product Image"
+                                placeholder="Enter Product Image Link"
                                 name="image"
                                 value={addProduct.image}
                                 onChange={(e) =>
