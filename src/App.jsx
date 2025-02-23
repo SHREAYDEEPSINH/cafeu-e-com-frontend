@@ -15,6 +15,7 @@ import Container from './Components/Container';
 import Register from './Components/Register';
 import Login from './Components/Login';
 import Cart from './Components/Cart';
+import ShowProduct from './admin/pages/ShowProduct';
 
 function App() {
 
@@ -29,16 +30,20 @@ function App() {
   let adminPanel=()=>{
     return <Dashboard/>
   }
+  let adminProductView=()=>{
+    return <><ShowProduct/></>
+  }
 
   return (
     <>
       <Routes>
         <Route exact path="/" element={<Container />} />
         <Route exact path="/admin" element={adminPanel()} />
+        <Route exact path="/admin/viewproduct" element={adminProductView()} />
+
         <Route exact path="/register" element={<Register/>} />
         <Route exact path="/login" element={<Login/>} />
         <Route exact path="/cart" element={<Cart/>} />
-
 
       </Routes>
     </>

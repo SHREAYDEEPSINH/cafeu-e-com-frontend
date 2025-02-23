@@ -121,7 +121,7 @@ function Menu() {
                         <div className='d-flex flex-wrap gap-4'>
                             {Pizza.map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
-                                    <img src="https://cafeu-react.netlify.app/img/product/1.png" className="card-img-top rounded-0" alt="..." />
+                                    <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
                                         <h5 className="card-title fs-6 fw-bold mb-3">{ele.productname}</h5>
                                         <p className="card-text graycolor">{ele.productdetails}</p>
@@ -141,7 +141,7 @@ function Menu() {
                         <div className='d-flex flex-wrap gap-4'>
                             {Asian.map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
-                                    <img src="https://cafeu-react.netlify.app/img/product/1.png" className="card-img-top rounded-0" alt="..." />
+                                    <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
                                         <h5 className="card-title fs-6 fw-bold mb-3">{ele.productname}</h5>
                                         <p className="card-text graycolor">{ele.productdetails}</p>
@@ -161,7 +161,7 @@ function Menu() {
                         <div className='d-flex flex-wrap gap-4'>
                             {Burger.map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
-                                    <img src="https://cafeu-react.netlify.app/img/product/1.png" className="card-img-top rounded-0" alt="..." />
+                                    <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
                                         <h5 className="card-title fs-6 fw-bold mb-3">{ele.productname}</h5>
                                         <p className="card-text graycolor">{ele.productdetails}</p>
@@ -181,7 +181,7 @@ function Menu() {
                         <div className='d-flex flex-wrap gap-4'>
                             {Salad.map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
-                                    <img src="https://cafeu-react.netlify.app/img/product/1.png" className="card-img-top rounded-0" alt="..." />
+                                    <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
                                         <h5 className="card-title fs-6 fw-bold mb-3">{ele.productname}</h5>
                                         <p className="card-text graycolor">{ele.productdetails}</p>
@@ -201,7 +201,7 @@ function Menu() {
                         <div className='d-flex flex-wrap gap-4'>
                             {Bakery.map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
-                                    <img src="https://cafeu-react.netlify.app/img/product/1.png" className="card-img-top rounded-0" alt="..." />
+                                    <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
                                         <h5 className="card-title fs-6 fw-bold mb-3">{ele.productname}</h5>
                                         <p className="card-text graycolor">{ele.productdetails}</p>
@@ -221,7 +221,7 @@ function Menu() {
                         <div className='d-flex flex-wrap gap-4'>
                             {Drink.map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
-                                    <img src="https://cafeu-react.netlify.app/img/product/1.png" className="card-img-top rounded-0" alt="..." />
+                                    <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
                                         <h5 className="card-title fs-6 fw-bold mb-3">{ele.productname}</h5>
                                         <p className="card-text graycolor">{ele.productdetails}</p>
