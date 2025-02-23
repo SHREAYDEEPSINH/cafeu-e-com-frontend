@@ -141,30 +141,6 @@ function AddProduct() {
                 </div>
             </div>
 
-            <div class="mt-5">
-                <h2 class="text-center">Product Data</h2>
-                <table class="table table-bordered table-striped">
-                    <thead class="table-dark">
-                        <tr>
-                            <th>Product Image</th>
-                            <th>Product Name</th>
-                            <th>Product Details</th>
-                            <th>Product Price</th>
-                            <th>Product Category</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {allProducts.map((ele) =>
-                            <tr key={ele._id}>
-                                <td>{ele.productname}</td>
-                                <td>{ele.productdetails}</td>
-                                <td>{ele.price}</td>
-                                <td>{ele.category}</td>
-                            </tr>
-                        )}
-                    </tbody>
-                </table>
-            </div>
         </>
     );
 }
