@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 
 
 function ViewProduct() {
-    const navigate = useNavigate();
     const [allProducts, setAllProducts] = useState([])
 
     useEffect(() => {
