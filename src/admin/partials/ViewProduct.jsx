@@ -21,7 +21,7 @@ function ViewProduct() {
 
     const deleteHandler = (id) => {
         axios
-            .delete(`https://cafue-e-com-backend.onrender.com/admin/deleteData/${id}`)
+            .delete(`https://cafue-e-com-backend.onrender.com/product/deleteData/${id}`)
             .then((res) => {
                 setAllProducts(allProducts.filter((product) => product._id !== id));
                 alert("Product deleted successfully!");
