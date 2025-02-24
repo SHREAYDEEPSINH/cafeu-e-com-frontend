@@ -68,7 +68,7 @@ function Cart() {
                 <div key={index} className="card border-0 rounded-0 mb-3 product-cart-card" style={{ boxShadow: " 0 6px 20px 1px #ddd " }}>
                   <div className="row g-0 h-100">
                     <div className="col-6 h-100">
-                      <img src="https://cafeu-react.netlify.app/img/product/1.png" className="img-fluid rounded-start h-100" alt="..." />
+                      <img src={ele.image} className="img-fluid rounded-start h-100" alt={ele.productName} />
                     </div>
                     <div className="col-6 d-flex">
                       <div className="card-body d-flex flex-column align-items-end justify-content-end">
