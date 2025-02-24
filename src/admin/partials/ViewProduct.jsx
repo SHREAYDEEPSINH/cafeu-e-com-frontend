@@ -23,7 +23,6 @@ function ViewProduct() {
             .delete(`https://cafue-e-com-backend.onrender.com/product/deleteData/${id}`)
             .then((res) => {
                 setAllProducts(allProducts.filter((product) => product._id !== id));
-                alert("Product deleted successfully!");
             })
             .catch((err) => {
                 console.error(err.response?.data || err.message);

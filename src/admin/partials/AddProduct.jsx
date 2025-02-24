@@ -41,7 +41,7 @@ function AddProduct() {
             .post("https://cafue-e-com-backend.onrender.com/product/insertProductData", addProduct)
             .then((res) => {
                 setAllProducts([...allProducts, res.data]);
-                confirm("Product Added")
+                alert("Product Added")
                 console.log("product added")
             })
             .catch((err) => {
@@ -55,9 +55,9 @@ function AddProduct() {
             <div class="container mt-5">
                 <div class="card shadow p-4">
                     <h2 class="text-center">Add Product</h2>
-                    <form onSubmit={submitHandler}  encType="multipart/form-data">
+                    <form onSubmit={submitHandler} >
                         <div class="mb-3">
-                            <label class="form-label">Product Image:</label>
+                            <label class="form-label">Product Image Link:</label>
                             <input
                                 type="text"
                                 class="form-control"
