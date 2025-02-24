@@ -45,6 +45,7 @@ function Menu() {
                 "https://cafue-e-com-backend.onrender.com/cart/addcart",
                 {
                     productId: product._id,
+                    productImage: product.image,
                     productName: product.productname,
                     productPrice: product.price,
                     quantity: 1
