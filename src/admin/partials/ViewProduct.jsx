@@ -55,7 +55,7 @@ function ViewProduct() {
                                 <td>{ele.productdetails}</td>
                                 <td>{ele.price}</td>
                                 <td>{ele.category}</td>
-                                <td><button onClick={() => deleteHandler(ele.id)}>Delete</button></td>
+                                <td><button className="btn btn-dark" onClick={() => deleteHandler(ele._id)}>Delete</button></td>
                             </tr>
                         )}
                     </tbody>
