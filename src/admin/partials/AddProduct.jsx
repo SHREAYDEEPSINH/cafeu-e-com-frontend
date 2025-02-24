@@ -33,7 +33,7 @@ function AddProduct() {
         e.preventDefault();
 
         if (!addProduct.productname || !addProduct.productdetails || !addProduct.price || !addProduct.category) {
-            setError("All fields are required!");
+            alert("All fields are required!");
             return;
         }
 
@@ -42,7 +42,6 @@ function AddProduct() {
             .then((res) => {
                 setAllProducts([...allProducts, res.data]);
                 alert("Product Added")
-                navigate("/admin");
             })
             .catch((err) => {
                 console.log(err);
