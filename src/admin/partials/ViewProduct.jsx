@@ -18,6 +18,20 @@ function ViewProduct() {
             });
     }, []);
 
+
+    const deleteHandler = (id) => {
+        axios
+            .delete(`https://cafue-e-com-backend.onrender.com/admin/deleteData/${id}`)
+            .then((res) => {
+                setAllProducts(allProducts.filter((product) => product._id !== id));
+                alert("Product deleted successfully!");
+            })
+            .catch((err) => {
+                console.error(err.response?.data || err.message);
+            });
+    };
+
+
     return (
         <>
             <div class="mt-5">
@@ -30,6 +44,7 @@ function ViewProduct() {
                             <th>Product Details</th>
                             <th>Product Price</th>
                             <th>Product Category</th>
+                            <th>Function</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -40,6 +55,7 @@ function ViewProduct() {
                                 <td>{ele.productdetails}</td>
                                 <td>{ele.price}</td>
                                 <td>{ele.category}</td>
+                                <td><button onClick={() => deleteHandler(ele.id)}>Delete</button></td>
                             </tr>
                         )}
                     </tbody>

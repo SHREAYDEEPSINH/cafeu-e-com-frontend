@@ -41,6 +41,7 @@ function AddProduct() {
             .post("https://cafue-e-com-backend.onrender.com/product/insertProductData", addProduct)
             .then((res) => {
                 setAllProducts([...allProducts, res.data]);
+                alert("Product Added")
                 navigate("/admin");
             })
             .catch((err) => {
