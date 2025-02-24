@@ -16,7 +16,7 @@ function ViewProduct() {
             .catch((err) => {
                 console.error(err.response?.data || err.message);
             });
-    }, [allProducts]);
+    }, []);
 
 
     const deleteHandler = (id) => {
