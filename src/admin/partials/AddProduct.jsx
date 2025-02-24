@@ -41,7 +41,8 @@ function AddProduct() {
             .post("https://cafue-e-com-backend.onrender.com/product/insertProductData", addProduct)
             .then((res) => {
                 setAllProducts([...allProducts, res.data]);
-                alert("Product Added")
+                confirm("Product Added")
+                console.log("product added")
             })
             .catch((err) => {
                 console.log(err);
