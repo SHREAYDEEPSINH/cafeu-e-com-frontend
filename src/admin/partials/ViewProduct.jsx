@@ -35,7 +35,7 @@ function ViewProduct() {
                     <tbody>
                         {allProducts.map((ele) =>
                             <tr key={ele._id}>
-                                <td><img src={ele.image} alt="" /></td>
+                                <td><img width={70} src={ele.image} alt="" /></td>
                                 <td>{ele.productname}</td>
                                 <td>{ele.productdetails}</td>
                                 <td>{ele.price}</td>
