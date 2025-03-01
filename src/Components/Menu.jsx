@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import axios from 'axios';
 import { Navigate, useNavigate } from 'react-router-dom';
+
 
 function Menu() {
 
@@ -24,16 +25,20 @@ function Menu() {
 
     console.log(allProducts)
 
-    let Pizza = allProducts.filter((ele) => ele.category == "Pizza")
-    let Asian = allProducts.filter((ele) => ele.category == "Asian")
-    let Burger = allProducts.filter((ele) => ele.category == "Burger")
-    let Salad = allProducts.filter((ele) => ele.category == "Salad")
-    let Bakery = allProducts.filter((ele) => ele.category == "Bakery")
-    let Drink = allProducts.filter((ele) => ele.category == "Drink")
+    // let Pizza = allProducts.filter((ele) => ele.category == "Pizza")
+    // let Asian = allProducts.filter((ele) => ele.category == "Asian")
+    // let Burger = allProducts.filter((ele) => ele.category == "Burger")
+    // let Salad = allProducts.filter((ele) => ele.category == "Salad")
+    // let Bakery = allProducts.filter((ele) => ele.category == "Bakery")
+    // let Drink = allProducts.filter((ele) => ele.category == "Drink")
+
+    const filterProductsByCategory = (category) => {
+        return allProducts.filter((ele) => ele.category === category);
+    };
 
 
 
-    const addCartHandler = async (product) => {
+    const addCartHandler = useCallback(async (product) => {
         if (!lsData.token) {
             alert("You must log in to add items to the cart!");
             navigate("/Login");
@@ -62,7 +67,7 @@ function Menu() {
             console.error(error.response?.data || error.message);
             alert("Failed to add item to cart. Check Login");
         }
-    };<div className="0"></div>
+    }, lsData,navigate);
 
 
 
@@ -120,7 +125,7 @@ function Menu() {
                     </div>
                     <div className="tab-pane fade" id="pills-Pizza" role="tabpanel" aria-labelledby="pills-Pizza-tab" tabIndex="0">
                         <div className='d-flex flex-wrap gap-4'>
-                            {Pizza.map((ele) =>
+                            {filterProductsByCategory("Pizza").map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
                                     <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
@@ -140,7 +145,7 @@ function Menu() {
                     </div>
                     <div className="tab-pane fade" id="pills-Asian" role="tabpanel" aria-labelledby="pills-Asian-tab" tabIndex="0">
                         <div className='d-flex flex-wrap gap-4'>
-                            {Asian.map((ele) =>
+                            {filterProductsByCategory("Asian").map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
                                     <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
