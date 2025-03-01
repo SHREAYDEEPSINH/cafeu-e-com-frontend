@@ -77,25 +77,25 @@ function Menu() {
             <div className='d-flex flex-column align-items-center mt-3'>
                 <ul className="nav nav-pills mb-5 gap-2 justify-content-center" id="pills-tab" role="tablist">
                     <li className="nav-item" role="presentation">
-                        <button className="nav-link active d-flex flex-column align-items-center text-secondary p-2 pb-1" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true"><img width={"70px"} src="https://cafeu-react.netlify.app/img/category/icon/7.png" alt="" /> <span className='font2 fs-5'>All</span></button>
+                        <button className="nav-link active d-flex flex-column align-items-center text-secondary p-2 pb-1" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true"><img width={"70px"} src="https://cafeu-react.netlify.app/img/category/icon/7.png" alt="All" /> <span className='font2 fs-5'>All</span></button>
                     </li>
                     <li className="nav-item" role="presentation">
-                        <button className="nav-link d-flex flex-column align-items-center text-secondary p-2 pb-1" id="pills-Pizza-tab" data-bs-toggle="pill" data-bs-target="#pills-Pizza" type="button" role="tab" aria-controls="pills-Pizza" aria-selected="false"><img width={"70px"} src="https://cafeu-react.netlify.app/img/category/icon/1.png" alt="" /> <span className='font2 fs-5 '>Pizza</span></button>
+                        <button className="nav-link d-flex flex-column align-items-center text-secondary p-2 pb-1" id="pills-Pizza-tab" data-bs-toggle="pill" data-bs-target="#pills-Pizza" type="button" role="tab" aria-controls="pills-Pizza" aria-selected="false"><img width={"70px"} src="https://cafeu-react.netlify.app/img/category/icon/1.png" alt="Pizza" /> <span className='font2 fs-5 '>Pizza</span></button>
                     </li>
                     <li className="nav-item" role="presentation">
-                        <button className="nav-link d-flex flex-column align-items-center text-secondary p-2 pb-1" id="pills-Asian-tab" data-bs-toggle="pill" data-bs-target="#pills-Asian" type="button" role="tab" aria-controls="pills-Asian" aria-selected="false"><img width={"70px"} src="https://cafeu-react.netlify.app/img/category/icon/2.png" alt="" /> <span className='font2 fs-5 '>Asian</span></button>
+                        <button className="nav-link d-flex flex-column align-items-center text-secondary p-2 pb-1" id="pills-Asian-tab" data-bs-toggle="pill" data-bs-target="#pills-Asian" type="button" role="tab" aria-controls="pills-Asian" aria-selected="false"><img width={"70px"} src="https://cafeu-react.netlify.app/img/category/icon/2.png" alt="Asian" /> <span className='font2 fs-5 '>Asian</span></button>
                     </li>
                     <li className="nav-item" role="presentation">
-                        <button className="nav-link d-flex flex-column align-items-center text-secondary p-2 pb-1" id="pills-Burger-tab" data-bs-toggle="pill" data-bs-target="#pills-Burger" type="button" role="tab" aria-controls="pills-Burger" aria-selected="false"><img width={"70px"} src="https://cafeu-react.netlify.app/img/category/icon/1.png" alt="" /> <span className='font2 fs-5 '>Burger</span></button>
+                        <button className="nav-link d-flex flex-column align-items-center text-secondary p-2 pb-1" id="pills-Burger-tab" data-bs-toggle="pill" data-bs-target="#pills-Burger" type="button" role="tab" aria-controls="pills-Burger" aria-selected="false"><img width={"70px"} src="https://cafeu-react.netlify.app/img/category/icon/1.png" alt="Burger" /> <span className='font2 fs-5 '>Burger</span></button>
                     </li>
                     <li className="nav-item" role="presentation">
-                        <button className="nav-link d-flex flex-column align-items-center text-secondary p-2 pb-1" id="pills-Salad-tab" data-bs-toggle="pill" data-bs-target="#pills-Salad" type="button" role="tab" aria-controls="pills-Salad" aria-selected="false"><img width={"70px"} src="https://cafeu-react.netlify.app/img/category/icon/1.png" alt="" /> <span className='font2 fs-5 '>Salad</span></button>
+                        <button className="nav-link d-flex flex-column align-items-center text-secondary p-2 pb-1" id="pills-Salad-tab" data-bs-toggle="pill" data-bs-target="#pills-Salad" type="button" role="tab" aria-controls="pills-Salad" aria-selected="false"><img width={"70px"} src="https://cafeu-react.netlify.app/img/category/icon/1.png" alt="Salad" /> <span className='font2 fs-5 '>Salad</span></button>
                     </li>
                     <li className="nav-item" role="presentation">
-                        <button className="nav-link d-flex flex-column align-items-center text-secondary p-2 pb-1" id="pills-Bakery-tab" data-bs-toggle="pill" data-bs-target="#pills-Bakery" type="button" role="tab" aria-controls="pills-Bakery" aria-selected="false"><img width={"70px"} src="https://cafeu-react.netlify.app/img/category/icon/1.png" alt="" /> <span className='font2 fs-5 '>Bakery</span></button>
+                        <button className="nav-link d-flex flex-column align-items-center text-secondary p-2 pb-1" id="pills-Bakery-tab" data-bs-toggle="pill" data-bs-target="#pills-Bakery" type="button" role="tab" aria-controls="pills-Bakery" aria-selected="false"><img width={"70px"} src="https://cafeu-react.netlify.app/img/category/icon/1.png" alt="Bakery" /> <span className='font2 fs-5 '>Bakery</span></button>
                     </li>
                     <li className="nav-item" role="presentation">
-                        <button className="nav-link d-flex flex-column align-items-center text-secondary p-2 pb-1" id="pills-Drink-tab" data-bs-toggle="pill" data-bs-target="#pills-Drink" type="button" role="tab" aria-controls="pills-Drink" aria-selected="false"><img src="https://cafeu-react.netlify.app/img/category/icon/1.png" alt="" /> <span className='font2 fs-5 '>Drink</span></button>
+                        <button className="nav-link d-flex flex-column align-items-center text-secondary p-2 pb-1" id="pills-Drink-tab" data-bs-toggle="pill" data-bs-target="#pills-Drink" type="button" role="tab" aria-controls="pills-Drink" aria-selected="false"><img src="https://cafeu-react.netlify.app/img/category/icon/1.png" alt="Drink" /> <span className='font2 fs-5 '>Drink</span></button>
                     </li>
 
                 </ul>
@@ -111,7 +111,6 @@ function Menu() {
                                         <span className='d-flex justify-content-between'>
                                             <p className='redcolor'>Price : {ele.price}</p>
                                             <span className='d-flex gap-1'>
-                                                {/* <button href="#" className="btn border rounded-0"><i className="fa-solid fa-plus fa-lg fw-bolder" style={{ color: "#D65C5C" }}></i></button> */}
                                                 <button onClick={() => addCartHandler(ele)} href="#" className="btn btn-dark rounded-0"><i className="fa-solid fa-cart-shopping fa-sm" style={{ color: "#ffffff" }}></i></button>
                                             </span>
                                         </span>
@@ -131,7 +130,6 @@ function Menu() {
                                         <span className='d-flex justify-content-between'>
                                             <p className='redcolor'>Price : {ele.price}</p>
                                             <span className='d-flex gap-1'>
-                                                {/* <button  href="#" className="btn border rounded-0"><i className="fa-solid fa-plus fa-lg fw-bolder" style={{ color: "#D65C5C" }}></i></button> */}
                                                 <button onClick={() => addCartHandler(ele)} href="#" className="btn btn-dark rounded-0"><i className="fa-solid fa-cart-shopping fa-sm" style={{ color: "#ffffff" }}></i></button>
                                             </span>
                                         </span>
@@ -151,7 +149,6 @@ function Menu() {
                                         <span className='d-flex justify-content-between'>
                                             <p className='redcolor'>Price : {ele.price}</p>
                                             <span className='d-flex gap-1'>
-                                                {/* <button href="#" className="btn border rounded-0"><i className="fa-solid fa-plus fa-lg fw-bolder" style={{ color: "#D65C5C" }}></i></button> */}
                                                 <button onClick={() => addCartHandler(ele)} href="#" className="btn btn-dark rounded-0"><i className="fa-solid fa-cart-shopping fa-sm" style={{ color: "#ffffff" }}></i></button>
                                             </span>
                                         </span>
@@ -171,7 +168,6 @@ function Menu() {
                                         <span className='d-flex justify-content-between'>
                                             <p className='redcolor'>Price : {ele.price}</p>
                                             <span className='d-flex gap-1'>
-                                                {/* <button href="#" className="btn border rounded-0"><i className="fa-solid fa-plus fa-lg fw-bolder" style={{ color: "#D65C5C" }}></i></button> */}
                                                 <button onClick={() => addCartHandler(ele)} href="#" className="btn btn-dark rounded-0"><i className="fa-solid fa-cart-shopping fa-sm" style={{ color: "#ffffff" }}></i></button>
                                             </span>
                                         </span>
@@ -191,7 +187,6 @@ function Menu() {
                                         <span className='d-flex justify-content-between'>
                                             <p className='redcolor'>Price : {ele.price}</p>
                                             <span className='d-flex gap-1'>
-                                                {/* <button href="#" className="btn border rounded-0"><i className="fa-solid fa-plus fa-lg fw-bolder" style={{ color: "#D65C5C" }}></i></button> */}
                                                 <button onClick={() => addCartHandler(ele)} href="#" className="btn btn-dark rounded-0"><i className="fa-solid fa-cart-shopping fa-sm" style={{ color: "#ffffff" }}></i></button>
                                             </span>
                                         </span>
@@ -211,7 +206,6 @@ function Menu() {
                                         <span className='d-flex justify-content-between'>
                                             <p className='redcolor'>Price : {ele.price}</p>
                                             <span className='d-flex gap-1'>
-                                                {/* <button href="#" className="btn border rounded-0"><i className="fa-solid fa-plus fa-lg fw-bolder" style={{ color: "#D65C5C" }}></i></button> */}
                                                 <button onClick={() => addCartHandler(ele)} href="#" className="btn btn-dark rounded-0"><i className="fa-solid fa-cart-shopping fa-sm" style={{ color: "#ffffff" }}></i></button>
                                             </span>
                                         </span>
@@ -231,7 +225,6 @@ function Menu() {
                                         <span className='d-flex justify-content-between'>
                                             <p className='redcolor'>Price : {ele.price}</p>
                                             <span className='d-flex gap-1'>
-                                                {/* <button href="#" className="btn border rounded-0"><i className="fa-solid fa-plus fa-lg fw-bolder" style={{ color: "#D65C5C" }}></i></button> */}
                                                 <button onClick={() => addCartHandler(ele)} href="#" className="btn btn-dark rounded-0"><i className="fa-solid fa-cart-shopping fa-sm" style={{ color: "#ffffff" }}></i></button>
                                             </span>
                                         </span>
