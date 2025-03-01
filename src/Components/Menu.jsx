@@ -62,7 +62,7 @@ function Menu() {
             console.error(error.response?.data || error.message);
             alert("Failed to add item to cart. Check Login");
         }
-    };
+    };<div className="0"></div>
 
 
 

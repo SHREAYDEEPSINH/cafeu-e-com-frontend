@@ -22,6 +22,12 @@ function Navbar() {
                     </button>
                     <div className="navbar-collapse flex-grow-0" id="navbarSupportedContent">
                         <ul className=" navbar-nav me-auto mb-2 mb-lg-0 gap-3 fw-medium d-flex align-items-center">
+                            {/* <Navbarprops  title="Home" data1="Home1" data2="Home2" data3="Home3" data4="Home4" data5="Home5" data6="Home6" data7="Home7"/>
+                            <Navbarprops  title="About Us" data1="About" data2="About Two" />
+                            <Navbarprops  title="Menu" />
+                            <Navbarprops  title="Blog" />
+                            <Navbarprops  title="Pages" />
+                            <Navbarprops  title="Contact" /> */}
                             <li className='me-4 ms-1'>
                                 <i className="bi bi-search"></i>
                             </li>
@@ -30,7 +36,7 @@ function Navbar() {
                                 <h6 className='m-0'> +880 123 456 789</h6>
                             </li>
                             <Link to="/cart" className=' text-danger'><i className="fa-solid fa-cart-shopping fs-4"></i></Link>
-                           
+                            {/* <Link to="/login" className=' text-danger'><li><i className="fa-regular fa-user fs-4" ></i></li></Link> */}
                             <div className="dropdown">
                                 <button className="btn border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <li><i className="fa-regular fa-user fs-4 text-danger" ></i></li>
