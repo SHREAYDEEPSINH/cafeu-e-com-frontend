@@ -1,7 +1,6 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { Navigate, useNavigate } from 'react-router-dom';
-
 
 function Menu() {
 
@@ -25,20 +24,16 @@ function Menu() {
 
     console.log(allProducts)
 
-    // let Pizza = allProducts.filter((ele) => ele.category == "Pizza")
-    // let Asian = allProducts.filter((ele) => ele.category == "Asian")
-    // let Burger = allProducts.filter((ele) => ele.category == "Burger")
-    // let Salad = allProducts.filter((ele) => ele.category == "Salad")
-    // let Bakery = allProducts.filter((ele) => ele.category == "Bakery")
-    // let Drink = allProducts.filter((ele) => ele.category == "Drink")
-
-    const filterProductsByCategory = (category) => {
-        return allProducts.filter((ele) => ele.category === category);
-    };
+    let Pizza = allProducts.filter((ele) => ele.category == "Pizza")
+    let Asian = allProducts.filter((ele) => ele.category == "Asian")
+    let Burger = allProducts.filter((ele) => ele.category == "Burger")
+    let Salad = allProducts.filter((ele) => ele.category == "Salad")
+    let Bakery = allProducts.filter((ele) => ele.category == "Bakery")
+    let Drink = allProducts.filter((ele) => ele.category == "Drink")
 
 
 
-    const addCartHandler = useCallback(async (product) => {
+    const addCartHandler = async (product) => {
         if (!lsData.token) {
             alert("You must log in to add items to the cart!");
             navigate("/Login");
@@ -67,7 +62,7 @@ function Menu() {
             console.error(error.response?.data || error.message);
             alert("Failed to add item to cart. Check Login");
         }
-    }, lsData,navigate);
+    };
 
 
 
@@ -125,7 +120,7 @@ function Menu() {
                     </div>
                     <div className="tab-pane fade" id="pills-Pizza" role="tabpanel" aria-labelledby="pills-Pizza-tab" tabIndex="0">
                         <div className='d-flex flex-wrap gap-4'>
-                            {filterProductsByCategory("Pizza").map((ele) =>
+                            {Pizza.map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
                                     <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
@@ -145,7 +140,7 @@ function Menu() {
                     </div>
                     <div className="tab-pane fade" id="pills-Asian" role="tabpanel" aria-labelledby="pills-Asian-tab" tabIndex="0">
                         <div className='d-flex flex-wrap gap-4'>
-                            {filterProductsByCategory("Asian").map((ele) =>
+                            {Asian.map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
                                     <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
@@ -165,7 +160,7 @@ function Menu() {
                     </div>
                     <div className="tab-pane fade" id="pills-Burger" role="tabpanel" aria-labelledby="pills-Burger-tab" tabIndex="0">
                         <div className='d-flex flex-wrap gap-4'>
-                            {filterProductsByCategory("Burger").map((ele) =>
+                            {Burger.map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
                                     <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
@@ -185,7 +180,7 @@ function Menu() {
                     </div>
                     <div className="tab-pane fade" id="pills-Salad" role="tabpanel" aria-labelledby="pills-Salad-tab" tabIndex="0">
                         <div className='d-flex flex-wrap gap-4'>
-                            {filterProductsByCategory("Salad").map((ele) =>
+                            {Salad.map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
                                     <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
@@ -205,7 +200,7 @@ function Menu() {
                     </div>
                     <div className="tab-pane fade" id="pills-Bakery" role="tabpanel" aria-labelledby="pills-Bakery-tab" tabIndex="0">
                         <div className='d-flex flex-wrap gap-4'>
-                            {filterProductsByCategory("Bakery").map((ele) =>
+                            {Bakery.map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
                                     <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
@@ -225,7 +220,7 @@ function Menu() {
                     </div>
                     <div className="tab-pane fade" id="pills-Drink" role="tabpanel" aria-labelledby="pills-Drink-tab" tabIndex="0">
                         <div className='d-flex flex-wrap gap-4'>
-                            {filterProductsByCategory("Drink").map((ele) =>
+                            {Drink.map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
                                     <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
