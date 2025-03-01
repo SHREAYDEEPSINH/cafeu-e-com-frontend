@@ -111,7 +111,6 @@ function Menu() {
                                         <span className='d-flex justify-content-between'>
                                             <p className='redcolor'>Price : {ele.price}</p>
                                             <span className='d-flex gap-1'>
-                                                {/* <button href="#" className="btn border rounded-0"><i className="fa-solid fa-plus fa-lg fw-bolder" style={{ color: "#D65C5C" }}></i></button> */}
                                                 <button onClick={() => addCartHandler(ele)} href="#" className="btn btn-dark rounded-0"><i className="fa-solid fa-cart-shopping fa-sm" style={{ color: "#ffffff" }}></i></button>
                                             </span>
                                         </span>
@@ -131,7 +130,6 @@ function Menu() {
                                         <span className='d-flex justify-content-between'>
                                             <p className='redcolor'>Price : {ele.price}</p>
                                             <span className='d-flex gap-1'>
-                                                {/* <button  href="#" className="btn border rounded-0"><i className="fa-solid fa-plus fa-lg fw-bolder" style={{ color: "#D65C5C" }}></i></button> */}
                                                 <button onClick={() => addCartHandler(ele)} href="#" className="btn btn-dark rounded-0"><i className="fa-solid fa-cart-shopping fa-sm" style={{ color: "#ffffff" }}></i></button>
                                             </span>
                                         </span>
@@ -151,7 +149,6 @@ function Menu() {
                                         <span className='d-flex justify-content-between'>
                                             <p className='redcolor'>Price : {ele.price}</p>
                                             <span className='d-flex gap-1'>
-                                                {/* <button href="#" className="btn border rounded-0"><i className="fa-solid fa-plus fa-lg fw-bolder" style={{ color: "#D65C5C" }}></i></button> */}
                                                 <button onClick={() => addCartHandler(ele)} href="#" className="btn btn-dark rounded-0"><i className="fa-solid fa-cart-shopping fa-sm" style={{ color: "#ffffff" }}></i></button>
                                             </span>
                                         </span>
@@ -171,7 +168,6 @@ function Menu() {
                                         <span className='d-flex justify-content-between'>
                                             <p className='redcolor'>Price : {ele.price}</p>
                                             <span className='d-flex gap-1'>
-                                                {/* <button href="#" className="btn border rounded-0"><i className="fa-solid fa-plus fa-lg fw-bolder" style={{ color: "#D65C5C" }}></i></button> */}
                                                 <button onClick={() => addCartHandler(ele)} href="#" className="btn btn-dark rounded-0"><i className="fa-solid fa-cart-shopping fa-sm" style={{ color: "#ffffff" }}></i></button>
                                             </span>
                                         </span>
@@ -191,7 +187,6 @@ function Menu() {
                                         <span className='d-flex justify-content-between'>
                                             <p className='redcolor'>Price : {ele.price}</p>
                                             <span className='d-flex gap-1'>
-                                                {/* <button href="#" className="btn border rounded-0"><i className="fa-solid fa-plus fa-lg fw-bolder" style={{ color: "#D65C5C" }}></i></button> */}
                                                 <button onClick={() => addCartHandler(ele)} href="#" className="btn btn-dark rounded-0"><i className="fa-solid fa-cart-shopping fa-sm" style={{ color: "#ffffff" }}></i></button>
                                             </span>
                                         </span>
@@ -211,7 +206,6 @@ function Menu() {
                                         <span className='d-flex justify-content-between'>
                                             <p className='redcolor'>Price : {ele.price}</p>
                                             <span className='d-flex gap-1'>
-                                                {/* <button href="#" className="btn border rounded-0"><i className="fa-solid fa-plus fa-lg fw-bolder" style={{ color: "#D65C5C" }}></i></button> */}
                                                 <button onClick={() => addCartHandler(ele)} href="#" className="btn btn-dark rounded-0"><i className="fa-solid fa-cart-shopping fa-sm" style={{ color: "#ffffff" }}></i></button>
                                             </span>
                                         </span>
@@ -231,7 +225,6 @@ function Menu() {
                                         <span className='d-flex justify-content-between'>
                                             <p className='redcolor'>Price : {ele.price}</p>
                                             <span className='d-flex gap-1'>
-                                                {/* <button href="#" className="btn border rounded-0"><i className="fa-solid fa-plus fa-lg fw-bolder" style={{ color: "#D65C5C" }}></i></button> */}
                                                 <button onClick={() => addCartHandler(ele)} href="#" className="btn btn-dark rounded-0"><i className="fa-solid fa-cart-shopping fa-sm" style={{ color: "#ffffff" }}></i></button>
                                             </span>
                                         </span>
