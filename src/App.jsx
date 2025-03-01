@@ -6,7 +6,6 @@ import {
 
 import './admin/css/style.css';
 
-import './admin/charts/ChartjsConfig';
 
 // Import pages
 import Dashboard from './admin/pages/Dashboard';
