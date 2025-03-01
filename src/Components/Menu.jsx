@@ -165,7 +165,7 @@ function Menu() {
                     </div>
                     <div className="tab-pane fade" id="pills-Burger" role="tabpanel" aria-labelledby="pills-Burger-tab" tabIndex="0">
                         <div className='d-flex flex-wrap gap-4'>
-                            {Burger.map((ele) =>
+                            {filterProductsByCategory("Burger").map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
                                     <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
@@ -185,7 +185,7 @@ function Menu() {
                     </div>
                     <div className="tab-pane fade" id="pills-Salad" role="tabpanel" aria-labelledby="pills-Salad-tab" tabIndex="0">
                         <div className='d-flex flex-wrap gap-4'>
-                            {Salad.map((ele) =>
+                            {filterProductsByCategory("Salad").map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
                                     <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
@@ -205,7 +205,7 @@ function Menu() {
                     </div>
                     <div className="tab-pane fade" id="pills-Bakery" role="tabpanel" aria-labelledby="pills-Bakery-tab" tabIndex="0">
                         <div className='d-flex flex-wrap gap-4'>
-                            {Bakery.map((ele) =>
+                            {filterProductsByCategory("Bakery").map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
                                     <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
@@ -225,7 +225,7 @@ function Menu() {
                     </div>
                     <div className="tab-pane fade" id="pills-Drink" role="tabpanel" aria-labelledby="pills-Drink-tab" tabIndex="0">
                         <div className='d-flex flex-wrap gap-4'>
-                            {Drink.map((ele) =>
+                            {filterProductsByCategory("Drink").map((ele) =>
                                 <div key={ele._id} className="card border-0 rounded-0" style={{ width: "24rem", boxShadow: " 0 6px 20px 1px #ddd " }}>
                                     <img src={ele.image} className="card-img-top rounded-0" alt={ele.productname} />
                                     <div className="card-body p-4">
